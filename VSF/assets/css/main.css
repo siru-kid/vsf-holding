@@ -34,7 +34,7 @@
   --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
   --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
   --nav-dropdown-color: #212529; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #2F76DB; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  --nav-dropdown-hover-color: #5c8acc; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
@@ -93,7 +93,7 @@ h6 {
 /* Navigation Arrows */
 /* Swiper navigation */
 .swiper-button-next, .swiper-button-prev {
-  color: gold;
+  color:#5c8acc;
   font-size: 40px;
   top: 50%;
   transform: translateY(-50%);
@@ -102,7 +102,7 @@ h6 {
 .swiper-button-next { right: -50px; }
 .swiper-button-prev { left: -50px; }
 .swiper-button-next:hover, .swiper-button-prev:hover {
-  color: #FFD700;
+  color: #5c8acc;
 }
 
 .bio-modal {
@@ -273,21 +273,16 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 36px;
+  max-height: 40px;
   margin-right: 8px;
 }
 
-.header .logo h1 {
-  font-size: 32px;
-  margin: 0;
-  font-weight: 700;
-  color: var(--heading-color);
+
+.logo img {
+  width: 80px;
+  height: auto;
 }
 
-.header .logo span {
-  color: var(--accent-color);
-  font-size: 32px;
-}
 
 .header .btn-getstarted,
 .header .btn-getstarted:focus {
@@ -1824,6 +1819,54 @@ section,
   margin-right: 8px;
   color: var(--accent-color);
 }
+
+#modalImage {
+  border-radius: 8px;
+  width: auto;
+  height: auto;
+}
+
+/* On desktop/laptop (min-width 992px), apply max size */
+@media (min-width: 992px) {
+  #modalImage {
+    max-width: 60%;
+    max-height: 60%;
+  }
+}
+
+/* On smaller screens (mobile/tablet), let it be full size or adjust as needed */
+@media (max-width: 991px) {
+  #modalImage {
+    max-width: 90%;
+    max-height: 110%;
+  }
+}
+/* Make swiper arrows always visible and positioned mid-screen vertically */
+.swiper-button-prev,
+.swiper-button-next {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  opacity: 1 !important;
+}
+
+/* Position on the left and right edges of the container */
+.swiper-button-prev {
+  left: -10px;
+}
+
+.swiper-button-next {
+  right: -10px;
+}
+
 
 /*--------------------------------------------------------------
 # Starter Section Section

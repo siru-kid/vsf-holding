@@ -3,12 +3,12 @@
   <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>VSF Holdings</title>
+    <title>VSFHoldings</title>
     <meta name="description" content="" />
     <meta name="keywords" content="" />
 
     <!-- Favicons -->
-    <link href="assets/img/MainLogo.png" rel="icon" />
+    <link href="assets/img/logo.png" rel="icon" class="logo lg-flex" />
     <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
     <!-- Fonts -->
@@ -65,7 +65,16 @@
           href="index.html"
           class="logo d-none d-lg-flex align-items-center me-auto me-lg-0"
         >
-          <img src="assets/img/logo.png" alt="logo" />
+          <img src="assets/img/logo.png" alt="logo" width="200" height="60" />
+          <span
+            style="
+              font-weight: bold;
+              font-size: 24px;
+              color: #ffffff;
+              margin-left: 10px;
+            "
+            >VSF Holdings</span
+          >
         </a>
 
         <nav id="navmenu" class="navmenu">
@@ -112,19 +121,30 @@
               data-aos="fade-up"
               data-aos-delay="300"
             >
-              <div class="icon-box">
-                <i class="fas fa-handshake"></i>
-                <h3><a href="">Strategic Partnerships and Connectivity</a></h3>
+              <div
+                class="icon-box text-center d-flex flex-column align-items-center"
+              >
+                <i
+                  class="fas fa-handshake pt-4"
+                  style="font-size: 40px; margin-bottom: 10px"
+                ></i>
+
+                <h3><a href="">Strategic Partnerships & Connectivity</a></h3>
               </div>
             </div>
+
             <div
               class="col-xl-2 col-md-4"
               data-aos="fade-up"
               data-aos-delay="400"
             >
-              <div class="icon-box">
-                <i class="bi bi-shield-lock"></i>
-
+              <div
+                class="icon-box text-center d-flex flex-column align-items-center"
+              >
+                <i
+                  class="bi bi-shield-lock"
+                  style="font-size: 40px; margin-bottom: 10px"
+                ></i>
                 <h3><a href="">Private Placements</a></h3>
               </div>
             </div>
@@ -134,14 +154,20 @@
               data-aos="fade-up"
               data-aos-delay="700"
             >
-              <div class="icon-box">
-                <i class="bi bi-gem"></i>
+              <div
+                class="icon-box text-center d-flex flex-column align-items-center"
+              >
+                <i
+                  class="bi bi-gem"
+                  style="font-size: 40px; margin-bottom: 10px"
+                ></i>
                 <h3><a href="">Scalability and Expertise</a></h3>
               </div>
             </div>
           </div>
         </div>
       </section>
+
       <!-- /Hero Section -->
 
       <!-- About Section -->
@@ -158,8 +184,15 @@
             </div>
             <div class="col-lg-6 order-2 order-lg-1 d-flex align-items-center">
               <div>
-                <h3>About VSF Holdings Inc.</h3>
-                <p class="fst-italic">
+                <h1 style="font-weight: 700">About VSF Holdings Inc.</h1>
+                <p
+                  style="
+                    font-style: normal;
+                    line-height: 1.6;
+                    text-align: justify;
+                    max-width: 100%;
+                  "
+                >
                   At VSF, we provide comprehensive financial solutions through
                   diverse investment products and wealth management. Our mission
                   is to empower individuals and businesses with innovative
@@ -249,21 +282,21 @@
               </div>
               <div class="swiper-slide">
                 <img
-                  src="assets/img/clients/client-5.png"
+                  src="assets/img/clients/client-5.PNG"
                   class="img-fluid"
                   alt="Client 5"
                 />
               </div>
               <div class="swiper-slide">
                 <img
-                  src="assets/img/clients/client-2.png"
+                  src="assets/img/clients/client-6.PNG"
                   class="img-fluid"
                   alt="Client 6"
                 />
               </div>
               <div class="swiper-slide">
                 <img
-                  src="assets/img/clients/client-3.png"
+                  src="assets/img/clients/client-7.png"
                   class="img-fluid"
                   alt="Client 7"
                 />
@@ -276,7 +309,6 @@
                 />
               </div>
             </div>
-            <div class="swiper-pagination"></div>
           </div>
         </div>
       </section>
@@ -285,34 +317,7 @@
       <!-- /Services Section -->
 
       <!-- Call To Action Section -->
-      <section
-        id="call-to-action"
-        class="call-to-action section dark-background"
-      >
-        <img src="assets/img/cta-bg.jpg" alt="Background Image" />
 
-        <div class="container">
-          <div
-            class="row justify-content-center"
-            data-aos="zoom-in"
-            data-aos-delay="100"
-          >
-            <div class="col-xl-10">
-              <div class="text-center">
-                <h3>Invest with Confidence</h3>
-                <p>
-                  Join exclusive investment opportunities with VSF Holdings. We
-                  specialize in high-value, private market investments in
-                  digital assets, private equity, and more. With our expertise
-                  and strategic partnerships, we offer tailored solutions that
-                  meet the needs of accredited investors and institutions.
-                </p>
-                <a class="cta-btn" href="#contact">Get Started</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
       <!-- /Call To Action Section -->
       <!-- Portfolio Section -->
 
@@ -367,16 +372,21 @@
               <div class="swiper-slide">
                 <div
                   class="team-member"
-                  onclick="showBio('Zach Forseth','Founder & CEO','assets/img/team/team0.jpeg', `Zach began his career in financial markets at 12 years old, building a foundation in disciplined investing through custodial accounts. At 14, he founded and exited his first company, and by 19, launched an AI-driven music licensing venture. Backed by a legacy in multi-seven-figure construction and nine-figure finance, Zach combines proven execution with generational insight.`)"
+                  style="
+                    background-color: #1f1f1f;
+                    padding: 2px;
+                    border-radius: 8px;
+                  "
+                  onclick="showImagePopup('assets/img/team/team5_bio.PNG')"
                 >
                   <img
-                    src="assets/img/team/team0.jpeg"
+                    src="assets/img/team/team_1.png"
                     class="img-fluid"
-                    alt="Zach Forseth"
+                    alt="Noah Levesque"
                   />
-                  <h4 class="text-black mt-2 text-center">Zach Forseth</h4>
-                  <p class="text-black text-center" style="font-size: 14px">
-                    Founder & CEO
+                  <h4 class="text-white mt-2 text-center">Noah Levesque</h4>
+                  <p class="text-white text-center" style="font-size: 14px">
+                    Exclusive Partner
                   </p>
                 </div>
               </div>
@@ -385,15 +395,20 @@
               <div class="swiper-slide">
                 <div
                   class="team-member"
-                  onclick="showBio('Lukas Van Straten','Co-Founder & President','assets/img/team/team6.png', `Lukas built early business experience in his family’s ski resort operations before beginning to trade and invest independently. After co-founding an AI-driven music licensing venture, he launched VSF Holdings to pursue a long-term vision of institutional-grade investing. A CPA candidate and JDC West podium finisher, Lukas brings operational precision and entrepreneurial ambition to the firm’s leadership`)"
+                  style="
+                    background-color: #1f1f1f;
+                    padding: 2px;
+                    border-radius: 8px;
+                  "
+                  onclick="showImagePopup('assets/img/team/team2_bio.png')"
                 >
                   <img
-                    src="assets/img/team/team6.png"
+                    src="assets/img/team/team_6.png"
                     class="img-fluid"
                     alt="Lukas Van Straten"
                   />
-                  <h4 class="text-black mt-2 text-center">Lukas Van Straten</h4>
-                  <p class="text-black text-center" style="font-size: 14px">
+                  <h4 class="text-white mt-2 text-center">Lukas Van Straten</h4>
+                  <p class="text-white text-center" style="font-size: 14px">
                     Co-Founder & President
                   </p>
                 </div>
@@ -403,41 +418,68 @@
               <div class="swiper-slide">
                 <div
                   class="team-member"
-                  onclick="showBio('Mateo Lopez','COO & Director of Sales','assets/img/team/team2.png', `Starting as a licensed advisor at 18, Mateo quickly built a $1.5M AUM practice under the mentorship of multiple seven-figure producers. After scaling businesses beyond finance, he brings operational leadership and a passion for private market innovation to VSF Holdings’ long-term vision.`)"
+                  style="
+                    background-color: #1f1f1f;
+                    padding: 2px;
+                    border-radius: 8px;
+                  "
+                  onclick="showImagePopup('assets/img/team/team3_bio.png')"
                 >
                   <img
-                    src="assets/img/team/team2.png"
+                    src="assets/img/team/team_2.png"
                     class="img-fluid"
                     alt="Mateo Lopez"
                   />
-                  <h4 class="text-black mt-2 text-center">Mateo Lopez</h4>
-                  <p class="text-black text-center" style="font-size: 14px">
+                  <h4 class="text-white mt-2 text-center">Mateo Lopez</h4>
+                  <p class="text-white text-center" style="font-size: 14px">
                     COO & Director of Sales
                   </p>
                 </div>
               </div>
 
-              <!-- Orin Shafer -->
-
               <!-- Justice Obasi -->
               <div class="swiper-slide">
                 <div
                   class="team-member"
-                  onclick="showBio('Justice Obasi','Director of Finance','assets/img/team/team4.jpg', `After launching his first business at 18 and steadily building a strong and admirable personal investment portfolio across multiple markets, Justice brings trading discipline, entrepreneurial drive, and a competitive edge to VSF Holdings' vision of building next-generation investment platforms.`)"
+                  style="
+                    background-color: #1f1f1f;
+                    padding: 2px;
+                    border-radius: 8px;
+                  "
+                  onclick="showImagePopup('assets/img/team/team4_bio.png')"
                 >
                   <img
-                    src="assets/img/team/team4.jpg"
+                    src="assets/img/team/team_4.png"
                     class="img-fluid"
                     alt="Justice Obasi"
                   />
-                  <h4 class="text-black mt-2 text-center">Justice Obasi</h4>
-                  <p class="text-black text-center" style="font-size: 14px">
+                  <h4 class="text-white mt-2 text-center">Justice Obasi</h4>
+                  <p class="text-white text-center" style="font-size: 14px">
                     Director of Finance
                   </p>
                 </div>
               </div>
-
-              <!-- Noah Leveque -->
+              <div class="swiper-slide">
+                <div
+                  class="team-member"
+                  style="
+                    background-color: #1f1f1f;
+                    padding: 2px;
+                    border-radius: 8px;
+                  "
+                  onclick="showImagePopup('assets/img/team/team5_bio.png')"
+                >
+                  <img
+                    src="assets/img/team/team_5.png"
+                    class="img-fluid"
+                    alt="Justice Obasi"
+                  />
+                  <h4 class="text-white mt-2 text-center">Noah Levesque</h4>
+                  <p class="text-white text-center" style="font-size: 14px">
+                    Exclusive Partner
+                  </p>
+                </div>
+              </div>
             </div>
 
             <!-- Navigation -->
@@ -648,30 +690,6 @@
             </div>
 
             <!-- Newsletter -->
-            <div class="col-lg-4 col-md-12 footer-newsletter">
-              <h4>Our Newsletter</h4>
-              <p>
-                Subscribe to our newsletter and receive the latest news about
-                our products and services!
-              </p>
-              <form
-                action="forms/newsletter.php"
-                method="post"
-                class="php-email-form"
-              >
-                <div class="newsletter-form">
-                  <input type="email" name="email" /><input
-                    type="submit"
-                    value="Subscribe"
-                  />
-                </div>
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">
-                  Your subscription request has been sent. Thank you!
-                </div>
-              </form>
-            </div>
           </div>
         </div>
       </div>
@@ -699,6 +717,25 @@
 
     <!-- Preloader -->
     <div id="preloader"></div>
+    <!-- Image Modal -->
+    <!-- Image Modal -->
+    <div
+      id="imageModal"
+      style="
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.8);
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+      "
+    >
+      <img id="modalImage" src="" alt="Team Member" />
+    </div>
 
     <!-- Vendor JS Files -->
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -748,6 +785,31 @@
           768: { slidesPerView: 2 },
           992: { slidesPerView: 4 },
         },
+      });
+      function showImagePopup(imgSrc) {
+        const modal = document.getElementById("imageModal");
+        const modalImage = document.getElementById("modalImage");
+
+        modalImage.src = imgSrc;
+        modal.style.display = "flex";
+
+        // Close modal when clicking anywhere inside the modal (image or background)
+        modal.onclick = function () {
+          modal.style.display = "none";
+          modalImage.src = "";
+        };
+      }
+
+      function closeImagePopup() {
+        document.getElementById("imageModal").style.display = "none";
+      }
+
+      // Close modal on outside click
+      window.addEventListener("click", function (e) {
+        const modal = document.getElementById("imageModal");
+        if (e.target === modal) {
+          closeImagePopup();
+        }
       });
     </script>
   </body>
