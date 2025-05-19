@@ -19,22 +19,22 @@
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
-  --background-color: #1f1f1f;; /* Background color for the entire website, including individual sections */
-  --default-color: #ffffff; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #ffff; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #2F76DB; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --background-color: #ffffff; /* Background color for the entire website, including individual sections */
+  --default-color: #444444; /* Default color used for the majority of the text content across the entire website */
+  --heading-color: #151515; /* Color for headings, subheadings and title throughout the website */
+  --accent-color: #ffc451; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
-  --contrast-color: #fffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+  --contrast-color: #312f2f; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
   --nav-color: rgba(255, 255, 255, 0.905);  /* The default color of the main navmenu links */
-  --nav-hover-color: #2F76DB; /* Applied to main navmenu links when they are hovered over or active */
+  --nav-hover-color: #ffc451; /* Applied to main navmenu links when they are hovered over or active */
   --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
   --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
   --nav-dropdown-color: #212529; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #5c8acc; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  --nav-dropdown-hover-color: #ffc451; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
@@ -86,117 +86,6 @@ h6 {
   color: var(--heading-color);
   font-family: var(--heading-font);
 }
-/* Navigation Arrows */
-/* Swiper navigation */
-.swiper-button-next, .swiper-button-prev {
-  color:#5c8acc;
-  font-size: 40px;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 10;
-}
-.swiper-button-next { right: -50px; }
-.swiper-button-prev { left: -50px; }
-.swiper-button-next:hover, .swiper-button-prev:hover {
-  color: #5c8acc;
-}
-
-.bio-modal {
-  display: none;
-  position: fixed;
-  z-index: 9999;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(0, 0, 0, 0.85);
-  justify-content: center;
-  align-items: center;
-}
-
-.bio-content {
-  background: #111;
-  padding: 30px;
-  border-radius: 10px;
-  max-width: 900px;
-  width: 90%;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  animation: fadeIn 0.3s ease;
-  position: relative;
-}
-
-.bio-body {
-  display: flex;
-  flex-direction: column;
-}
-
-.bio-body img {
-  max-width: 100%;
-  border-radius: 10px;
-  margin-bottom: 20px;
-}
-
-.bio-text h3 {
-  color: #2F76DB;
-  margin-bottom: 5px;
-}
-
-.bio-text h5 {
-  margin-bottom: 10px;
-  font-weight: 400;
-  color: #aaa;
-}
-
-.bio-text p {
-  font-size: 15px;
-  line-height: 1.6;
-}
-
-.close-btn {
-  color: white;
-  font-size: 30px;
-  position: absolute;
-  top: 15px;
-  right: 20px;
-  cursor: pointer;
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; transform: scale(0.95); }
-  to { opacity: 1; transform: scale(1); }
-}
-
-@media (min-width: 768px) {
-  .bio-body {
-    flex-direction: row;
-    gap: 20px;
-  }
-  .bio-body img {
-    width: 40%;
-    margin-bottom: 0;
-  }
-  .bio-text {
-    width: 60%;
-  }
-}
-
-/* Bio content styling */
-.bio-overlay h4 {
-  font-size: 20px;
-  margin-bottom: 5px;
-}
-.bio-overlay span {
-  font-size: 16px;
-  color: #FFD700;
-  margin-bottom: 10px;
-  display: block;
-}
-.bio-overlay p {
-  font-size: 14px;
-  line-height: 1.5;
-  margin: 0;
-}
-
-
 
 /* PHP Email Form Messages
 ------------------------------*/
@@ -265,31 +154,25 @@ h6 {
 }
 
 .header .logo {
-  display: flex;
-  align-items: center;
+  line-height: 1;
 }
 
-
 .header .logo img {
-  max-height: 70px;
+  max-height: 36px;
   margin-right: 8px;
 }
 
-
-.logo img {
-  height: auto;
-  width: auto;
-}
-
-.logo-text {
-  padding-left:5px;
-  color: #ffffff;
+.header .logo h1 {
+  font-size: 32px;
+  margin: 0;
   font-weight: 700;
-  font-size: 25px;
-  margin-left: px; /* adjust for closeness */
+  color: var(--heading-color);
 }
 
-
+.header .logo span {
+  color: var(--accent-color);
+  font-size: 32px;
+}
 
 .header .btn-getstarted,
 .header .btn-getstarted:focus {
@@ -1827,54 +1710,9 @@ section,
   color: var(--accent-color);
 }
 
-#modalImage {
-  border-radius: 8px;
-  width: auto;
-  height: auto;
-}
-
-/* On desktop/laptop (min-width 992px), apply max size */
-@media (min-width: 992px) {
-  #modalImage {
-    max-width: 60%;
-    max-height: 60%;
-  }
-}
-
-/* On smaller screens (mobile/tablet), let it be full size or adjust as needed */
-@media (max-width: 991px) {
-  #modalImage {
-    max-width: 90%;
-    max-height: 110%;
-  }
-}
-/* Make swiper arrows always visible and positioned mid-screen vertically */
-.swiper-button-prev,
-.swiper-button-next {
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(0, 0, 0, 0.5);
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 10;
-  opacity: 1 !important;
-}
-
-/* Position on the left and right edges of the container */
-.swiper-button-prev {
-  left: -10px;
-}
-
-.swiper-button-next {
-  right: -10px;
-}
-
-
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
+.starter-section {
+  /* Add your styles here */
+}
